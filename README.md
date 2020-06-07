@@ -1,6 +1,6 @@
 # Trabalho final - Diógines Goldoni
 
-*Estrutura  de servicços:
+Estrutura  de serviços:
 ![Estrutura de serviços](https://github.com/dicogoldoni/tecnicasProg_trabFinal_dioginesGoldoni/blob/master/images/docker_image.png)
 
 1. Após levantar os container, com o comando `docker-compose up -d`, utilize o comando `docker-compose exec postgres psql -U ppgca -c '\l'` para verificar que a tabela `equations` foi criada com sucesso:
