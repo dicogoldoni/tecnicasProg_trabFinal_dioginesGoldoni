@@ -1,0 +1,28 @@
+version:  "3"
+services:
+  postgres:
+    image: postgres:9.6
+    restart: always
+    expose:
+      - "5432"
+    environment: 
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+      POSTGRES_USER: ppgca
+      POSTGRES_PASSWORD: ppgca
+      POSTGRES_DB: ppgca
+    volumes:
+      - ./data:/data
+      - ./data/init.sql:/docker-entrypoint-initdb.d/init.sql
+      
+  jupyter:
+    image: jupyter/datascience-notebook
+    ports:
+      - 8888:8888
+    links:
+      - postgres
+    depends_on: 
+      - postgres
+    volumes:
+      - ./notebooks:/notebooks
+    working_dir: /notebooks
+    command: sh ./install_db_and_start_jupyter.sh
