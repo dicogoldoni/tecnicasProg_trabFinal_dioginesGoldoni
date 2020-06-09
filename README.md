@@ -10,8 +10,11 @@
 - /data: O código `init.sql` utilizado para a criação do banco de dados fica aqui.
 - /notebooks: Aqui fica o código fonte do Jupyter Notebook, além do dataset em formato `.csv` e um script shell para instalar a biblioteca `psycopg2`.
 
+---
+
 ### Como utilizar:
 1. Utilize o commando `docker-compose up`, preferencialmente não utilizando o parâmetro `-d`, a fim de visualizar o log da imagem abaixo, que sinaliza o fim da inicialização: 
+![Levantando o container](https://github.com/dicogoldoni/tecnicasProg_trabFinal_dioginesGoldoni/blob/master/images/container_up.png)
 
 2. Após a inicialização, para verificar se a tabela `equations` foi criada com sucesso, utilize o comando `docker-compose exec postgres psql -U ppgca -c '\l':
 ![Checando o banco de dados](https://github.com/dicogoldoni/tecnicasProg_trabFinal_dioginesGoldoni/blob/master/images/database1.png)
