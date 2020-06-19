@@ -16,7 +16,7 @@
 1. Utilize o commando `docker-compose up`, preferencialmente não utilizando o parâmetro `-d`, a fim de visualizar o log da imagem abaixo, que sinaliza o fim da inicialização: 
 ![Levantando o container](https://github.com/dicogoldoni/tecnicasProg_trabFinal_dioginesGoldoni/blob/master/images/container_up.png)
 
-2. Após a inicialização, para verificar se a tabela `equations` foi criada com sucesso, utilize o comando `docker-compose exec postgres psql -U ppgca -c '\l':
+2. Após a inicialização, para verificar se a tabela `equations` foi criada com sucesso, utilize o comando `docker-compose exec postgres psql -U ppgca -c '\l'`:
 ![Checando o banco de dados](https://github.com/dicogoldoni/tecnicasProg_trabFinal_dioginesGoldoni/blob/master/images/database1.png)
 
 3. Para acessar o Jupyter notebook que contém o  código Python, utilize o browser para acessar `localhost:8888` e utilize a senha `ppgca`:
