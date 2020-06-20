@@ -1,5 +1,10 @@
 # Trabalho final - Diógines Goldoni
 
+## Contexto
+Unindo as disciplinas de `Técnicas de Programação`, `Mineração de Dados` e `Trabalho Individual I`, este trabalho tem por objetivo facilitar a reprodutibilidade da análise de clusterização efetuada sob um dataset de 10000 amostras de equações algébricas de 1° grau resolvidas, no Sistema Tutor Inteligente Pat2Math, por alunos do 7° ano, a fim de agrupar os tipos de equações que posam um maior nível de dificuldade para os alunos.
+
+---
+
 ## Estrutura
 ![Estrutura de serviços](https://github.com/dicogoldoni/tecnicasProg_trabFinal_dioginesGoldoni/blob/master/images/docker_image.png)
 
